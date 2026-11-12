@@ -19,23 +19,8 @@ Search movies, browse what's trending, read details (cast, trailer, facts) and s
 - **Functionality libraries:** react-router-dom, use-debounce (search), react-toastify (notifications)
 - **API:** [TMDB](https://www.themoviedb.org/documentation/api) REST API via `fetch` and `async/await`, with `AbortController` to cancel stale requests
 
-## Run locally
 
-1. Get a free API key at https://www.themoviedb.org/settings/api (the "API Key (v3 auth)" value).
-2. Copy `.env.example` to `.env` and paste the key.
-3. ```bash
-   npm install
-   npm run dev
-   ```
 
-## Deploy to GitHub Pages
-
-1. Create a GitHub repo and push this project to its `main` branch.
-2. In the repo go to **Settings > Secrets and variables > Actions > New repository secret**. Name it `VITE_TMDB_API_KEY` and paste your TMDB key.
-3. Go to **Settings > Pages** and set **Source** to **GitHub Actions**.
-4. Push to `main` (or run the workflow manually from the Actions tab). The site will be live at `https://<your-username>.github.io/<repo-name>/`.
-
-Note: a TMDB v3 key used in a client-side app is visible in the built JavaScript. That is normal for TMDB (keys are free and rate-limited), but don't reuse a key that matters elsewhere.
 
 ## Project structure
 
